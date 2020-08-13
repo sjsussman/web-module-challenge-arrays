@@ -42,15 +42,12 @@ To save you from having to count the items above, you can assume that length of 
 
 i.e. is31Flavors(originalFlavors) will return TRUE.*/
 
-function getAverageWordLength(arr){
-    let avg = 0
-    for (i = 0; i < arr.length; i++){
-     arr[i].split(" ").length;
-     avg = (avg + arr[i].split(" ").length);
+function is31Flavors(array){
+    if(array.length === 31) {
+        return true;
+    } else {
+        return false;
     }
-    return avg / arr.length
-  }
-
 
 
 /* Task 2: Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -194,16 +191,13 @@ and should return the average number of words per item in the array.
 For example, getAverageWordLength(originalFlavors) should return a number between 0 and 3. */
 
 function getAverageWordLength(arr){
-    let total = 0;
-    let avg = 0;
-    for(let i=0; i<arr.length; i++){
-        arr[i].length;
+    let avg = 0
+    for (i = 0; i < arr.length; i++){
+     arr[i].split(" ").length;
+     avg = (avg + arr[i].split(" ").length);
     }
-    avg = total / arr.length;
-    return avg;
-}
-
-console.log(arr[i].length)
+    return avg / arr.length
+  }
 
 
 /* STRETCH 2: Baskin Robins now offers new flavors, seasonal flavors, and even regional flavors. Write a function that will randomly select a total of 31 flavors from originalFlavors, currentFlavors, seasonalFlavors, and regionalFlavors.
