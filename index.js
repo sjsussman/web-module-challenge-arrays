@@ -42,16 +42,14 @@ To save you from having to count the items above, you can assume that length of 
 
 i.e. is31Flavors(originalFlavors) will return TRUE.*/
 
-function is31Flavors(array){
-    if(array.length === 31) {
-        return true;
-    } else {
-        return false;
+function getAverageWordLength(arr){
+    let avg = 0
+    for (i = 0; i < arr.length; i++){
+     arr[i].split(" ").length;
+     avg = (avg + arr[i].split(" ").length);
     }
-}
-
-
-console.log(is31Flavors(originalFlavors));
+    return avg / arr.length
+  }
 
 
 
